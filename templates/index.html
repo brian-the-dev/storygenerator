@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mad Libs AI</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Story Generator w/ Mad Libs + GPT-J Language Model</h1>
+        <p>Generate a random story with plain mad libs or with Eleuther's GPT-J Language Model.</p>
+        <hr/>
+        <form action="/">
+            <select id="type" name="type">
+                <option value="plain">Plain Mad Libs</option>
+                <option value="ai">Mad Libs + GPT-J</option>
+            </select>
+            <input type="submit" value="Generate">
+        </form>
+        <p>{{ story }}</p>
+        <footer>&copy; 2022 Brian | Stories generated with this site is licensed under CC-0.</footer>
+    </body>
+</html>
